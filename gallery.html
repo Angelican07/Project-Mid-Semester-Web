@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery - Portfolio Pribadi</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+    <header class="site-header">
+        <div class="hero">
+            <p>Galeri Foto Angel</p>
+            <h1>Moment Kecil, Cerita Besar</h1>
+            <p>Selamat datang di ruang foto saya. Klik gambar untuk melihat lebih dekat.</p>
+            <nav class="navbar">
+                <a class="nav-link" href="index.html">Home</a>
+                <a class="nav-link" href="gallery.html">Gallery</a>
+                <a class="nav-link" href="blog.html">Blog</a>
+                <a class="nav-link" href="contact.html">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="section-card">
+            <h2 style="text-align: center; color: #2d1b2e; margin-bottom: 1.2rem;">Koleksi Foto Saya</h2>
+            <p style="text-align: center; color: #7d5a7d; margin-bottom: 2.5rem; font-size: 1rem; line-height: 1.6;">Potret diri dan momen berharga bersama orang-orang tersayang</p>
+            
+            <div style="text-align: center; margin-bottom: 3rem;">
+                <h3 style="color: #c94f7a; margin: 1rem 0 0; font-size: 1.3rem; font-weight: 600;">📸 Potret Pribadi</h3>
+            </div>
+            <div class="gallery-grid">
+                <img class="gallery-image" src="image/sayaKecil.jpeg" alt="Angel kecil" data-caption="Angel kecil">
+                <img class="gallery-image" src="image/sayacantik.jpeg" alt="Angel cantik" data-caption="Angel cantik">
+                <img class="gallery-image" src="image/sayasidi.jpeg" alt="Angel dan Sidi" data-caption="Angel dan Sidi">
+            </div>
+        </section>
+
+        <section class="section-card">
+            <div style="text-align: center; margin-bottom: 3rem;">
+                <h3 style="color: #c94f7a; margin: 0; font-size: 1.3rem; font-weight: 600;">👨‍👩‍👧 Bersama Teman & Keluarga</h3>
+            </div>
+            <div class="gallery-grid">
+                <img class="gallery-image" src="image/SD.jpeg" alt="Foto SD" data-caption="Foto SD">
+                <img class="gallery-image" src="image/kamita.jpeg" alt="Foto bersama Kamita" data-caption="Foto bersama Kamita">
+                <img class="gallery-image" src="image/ongkau.jpeg" alt="Foto Ongkau" data-caption="Foto Ongkau">
+                <img class="gallery-image" src="image/selebrasi.jpeg" alt="Foto selebrasi" data-caption="Foto selebrasi">
+                <img class="gallery-image" src="image/kaweng.jpeg" alt="Foto Kaweng" data-caption="Foto Kaweng">
+                <img class="gallery-image" src="image/sidi.jpeg" alt="Foto Sidi" data-caption="Foto Sidi">
+                <img class="gallery-image" src="image/empat.jpeg" alt="Foto bersama empat teman" data-caption="Foto bersama empat teman">
+                <img class="gallery-image" src="image/sma.jpeg" alt="Foto SMA" data-caption="Foto SMA">
+            </div>
+        </section>
+    </main>
+
+    <div class="modal-overlay" id="imageModal">
+        <div class="modal-card">
+            <button class="modal-close" id="closeModal" aria-label="Tutup">×</button>
+            <img id="modalImage" src="" alt="Gambar besar">
+            <div class="modal-caption" id="modalCaption">Foto Angel</div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <p>&copy; 2026 Portfolio Pribadi. Dibuat dengan HTML murni.</p>
+    </footer>
+
+    <button id="backToTop" aria-label="Kembali ke atas">↑</button>
+
+</body>
+</html>
